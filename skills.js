@@ -11,5 +11,6 @@ $(window).on('scroll', function() {
         width: $(this).attr('data-percent')
       }, 3000);
     });
+    $(window).unbind('scroll'); // stops animation from running again
   }
 });
